@@ -1,0 +1,10 @@
+^D:\LABA_ALG\TTREETABLE\BUILD\CMAKEFILES\5EB4EFCFC20D29C7A2907B00CABA8C41\GENERATE.STAMP.RULE
+setlocal
+D:\Downloads\bin\cmake.exe -SD:/Laba_alg/TTreeTable -BD:/Laba_alg/TTreeTable/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Laba_alg/TTreeTable/build/set.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
